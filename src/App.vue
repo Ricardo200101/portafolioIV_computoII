@@ -1,15 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   
+  <div id="app" class="container"> 
+    <img alt="Vue Logo" src="@/assets/logougb.png " style="width: 150px; height: auto;">
+    <MiIntro></MiIntro>
+  <MiContenido></MiContenido>
+  <MiHome></MiHome>
+  </div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MiIntro from './components/MiIntro.vue'
+import MiContenido from './components/MiContenido.vue'
+import MiHome from './components/MiHome.vue'
+
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MiIntro, 
+    MiContenido, 
+    MiHome
   }
 }
 </script>
